@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black;
+}
+header {
+  min-height: 50vh;
+  @apply bg-no-repeat bg-cover bg-center;
+}
+.first_film{
+  background-color: #af5105;
+}
+.mockup {
+  flex-direction: row-reverse;
+}
+.search-bar {
+  background-color: black;
+  max-width: 700px;
+  backdrop-filter: blur(4px) saturate(180px);
+  color: #fff;
+  margin-left: -3px;
+}
+.input {
+  background-color: transparent;
+  @apply border-none outline-none font-semibold;
+}
+::placeholder {
+  color: #cac7ff;
+}
+.search-bar button {
+  background-color: #58629b;
+}
+.johnwick {
+  background-image:  url("./assets/john wick.jpg");
+  height: 500px;
+  @apply bg-no-repeat bg-cover bg-center;
+}
+.flash {
+  background-image: url("./assets/flash.jpg");
+  height: 500px;
+  @apply bg-no-repeat bg-cover bg-center;
+}
+.thor {
+  background-image: url("./assets/tho.jpg");
+  height: 500px;
+  @apply bg-no-repeat bg-cover bg-center;
+}
+.spider {
+  background-image: url("./assets/spiderverse.jpeg");
+  height: 500px;
+  @apply bg-no-repeat bg-cover bg-center;
+}
+.swipers {
+  padding: 20px 20px;
+}
+.text {
+  background-color: #af5105;
+  @apply px-4;
+}
+
+@media screen and (max-width: 1000px) {
+  .second-movies {
+    @apply grid-cols-3;
+  }
+}
+@media screen and (max-width: 500px) {
+  .input {
+    @apply w-40;
+  }
+  .search-bar {
+    @apply px-1;
+  }
+  .search-bar button {
+    @apply w-7 h-7 ml-2 bg-green-600;
+  }
+  .search-bar button img {
+    @apply w-6;
+  }
+  .swipers {
+    @apply ml-6 mt-8;
+  }
+  .swipers img {
+    @apply w-80;
+  }
+  .second-movies {
+    @apply grid grid-cols-2;
+  }
+  .second-movies img {
+    @apply h-36 w-40;
+  }
+  .textcate {
+    @apply gap-3;
+  }
+  .content{
+    @apply py-52
+  }
+  .featured {
+    @apply mt-10 px-12 mb-0;
+  }
+  .footer-img {
+    @apply py-10;
+  }
+  .footer-txt {
+    @apply block;
+  }
+  .footer-txt > p {
+    @apply mt-5 text-2xl;
+  }
+  .spider{
+    height: 530px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cate {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .input {
+    @apply w-36;
+  }
+  .swipers {
+    @apply ml-1;
+  }
+  .second-movies {
+    @apply grid grid-cols-2;
+  }
+  .second-movies img {
+    @apply h-36;
+  }
+  .textcate {
+    @apply gap-2;
+  }
+  .featured {
+    @apply mt-4 px-8;
+  }
+  .content{
+    @apply py-56
+  }
+ .content p{
+  @apply text-sm
+ }
+ .content h1{
+  @apply text-sm
+ }
+}
